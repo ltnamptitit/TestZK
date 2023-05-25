@@ -1,0 +1,36 @@
+<zk>
+	<style>
+		.search-container{ display: flex; justify-content:
+		space-between; margin-bottom: 10px; align-items: center}
+		.list-container{margin-bottom: 10px;}
+
+	</style>
+	<window width="600px">
+		<div sclass="search-container">
+			Key word:
+			<textbox id="searchTextBox" />
+			<button id="searchButton">Search</button>
+		</div>
+		<listbox rows="4" sclass="list-container">
+			<listhead>
+				<listheader label="Model" />
+				<listheader label="Make" />
+				<listheader label="Price" width="20%" />
+			</listhead>
+			<listitem>
+				<listcell></listcell>
+				<listcell></listcell>
+				<listcell></listcell>
+			</listitem>
+			<hlayout>
+				<image />
+				<vlayout>
+				<label id="product-name"></label>
+				<label id="producer"></label>
+				<label id="product-price"></label>
+				<label id="product-description"></label>
+				</vlayout>
+			</hlayout>
+		</listbox>
+	</window>
+</zk>

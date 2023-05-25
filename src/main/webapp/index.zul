@@ -1,0 +1,52 @@
+<?page title="Test"?>
+<zk>
+	<style>button{ margin: 0 14px; // width: 80px; }</style>
+
+	<window border="none" title="Register ZK" width="800px"
+		apply="com.registration">
+		<grid sclass="main-form">
+			<auxhead>
+				<auxheader colspan="2" label="Registration Form"
+					style="font-size:24px;color:#ebc334" />
+			</auxhead>
+			<columns visible="false">
+				<column></column>
+				<column></column>
+			</columns>
+			<rows>
+				<row>
+					<label value="User name" />
+					<textbox value="" id="textboxName"
+						constraint="no empty" />
+				</row>
+				<row>
+					<label value="Gender" />
+					<radiogroup id="selectGender">
+						<radio label="Male" value="male" />
+						<radio label="Female" value="female" />
+						<radio label="Other" value="other"
+							checked="true" />
+					</radiogroup>
+				</row>
+				<row>
+					<label value="Birthday" />
+					<datebox id="dateboxBirthday" />
+				</row>
+				<row spans="2" align="center">
+					<hlayout>
+						<checkbox id="termCheck"
+							label="Accept Term of Use" />
+					</hlayout>
+				</row>
+				<row spans="2" align="right">
+					<hlayout>
+						<button id="clearFormButton">Clear</button>
+						<button id="submitFormButton" disabled="true">
+							Submit
+						</button>
+					</hlayout>
+				</row>
+			</rows>
+		</grid>
+	</window>
+</zk>

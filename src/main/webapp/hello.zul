@@ -1,0 +1,6 @@
+<?page title="Hello "?>
+<zk>
+<window title="My First ZK Application" border="normal">
+	Hello World!
+</window>
+</zk>
